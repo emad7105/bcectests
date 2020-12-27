@@ -37,6 +37,7 @@ public class Main {
 
         Assert.check(q.getCurve().equals(domainParams.getCurve()));
 
+        // ==> IllegalArgumentException: 'points' entries must be null or on this curve
         domainParams.getCurve().normalizeAll(new ECPoint[]{q});
     }
 
